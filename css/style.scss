@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+  background: #ccc;
+  margin: 30px 50px;
+}
+
+.btn {
+  background: black;
+  color: whitesmoke;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  line-height: 3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+  line-height: 2;
+  .main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-nav a {
+    background: brown;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: greenyellow;
+  }
+
+  .main-nav a:hover {
+    background: blue;
+    color: aqua;
+  }
+}
+
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+
+  .showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url("../img/web.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: whitesmoke;
+    color: #ccc;
+    line-height: 2rem;
+  }
+  .top-box {
+    background: brown;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: white;
+    padding: 1.5rem;
+    color: white;
+  }
+  .top-box .price {
+    font-size: 2.5rem;
+  }
+  .top-box-a {
+    grid-area: top-box-a;
+  }
+  .top-box-b {
+    grid-area: top-box-b;
+  }
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .box {
+    background: brown;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: whitesmoke;
+    color: #ccc;
+  }  
+}
+
+.info {
+  background: brown;
+  box-shadow: whitesmoke;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  color: #ccc;
+}
+
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+
+  .portfolio img {
+    width: 100%;
+    box-shadow: whitesmoke;
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  background: black;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+
