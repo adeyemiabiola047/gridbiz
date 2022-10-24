@@ -152,6 +152,14 @@ footer {
 }
 @media (max-width: 500px) {
   .top-container {
-    grid-template-areas: "showcase" "top-box-a top-box-b";
+    grid-template-areas: "showcase showcase" "top-box-a top-box-b";
+  }
+}
+@media (max-width: 350px) {
+  .top-container {
+    display: block;
+  }
+  .top-container .top-box .price {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
